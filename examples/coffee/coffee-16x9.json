@@ -1,0 +1,247 @@
+{
+ "name": "coffee-16x9",
+ "theme": "studio",
+ "max_hold": 2.6,
+ "beats": [
+  {
+   "pose": "point_up",
+   "lines": [
+    "Coffee doesn't give you energy."
+   ],
+   "shots": [
+    {
+     "type": "card",
+     "icon": "fluent-emoji-flat:hot-beverage",
+     "label": "the promise",
+     "title": "More energy?",
+     "w": 640
+    },
+    {
+     "type": "stamp",
+     "text": "NOPE",
+     "rot": -8,
+     "at": "word:energy"
+    }
+   ]
+  },
+  {
+   "pose": "skeptical",
+   "lines": [
+    "It _hides_ how tired you are."
+   ],
+   "shots": [
+    {
+     "type": "sticker",
+     "lines": [
+      "IT HIDES"
+     ],
+     "red": true,
+     "rot": -3
+    },
+    {
+     "type": "card",
+     "icon": "fluent-emoji-flat:sleepy-face",
+     "label": "underneath",
+     "title": "Still tired",
+     "w": 620,
+     "at": "word:tired"
+    }
+   ]
+  },
+  {
+   "pose": "explain",
+   "lines": [
+    "All day, your brain makes a chemical called _adenosine_."
+   ],
+   "shots": [
+    {
+     "type": "card",
+     "icon": "fluent-emoji-flat:brain",
+     "label": "all day long",
+     "title": "Your brain",
+     "text": "keeps making one chemical",
+     "w": 700
+    },
+    {
+     "type": "scramble",
+     "text": "ADENOSINE",
+     "label": "the sleep chemical",
+     "decode": 0.6,
+     "at": "word:adenosine"
+    }
+   ]
+  },
+  {
+   "pose": "shrug",
+   "lines": [
+    "The more it piles up, the sleepier you feel."
+   ],
+   "shots": [
+    {
+     "type": "pile",
+     "items": [
+      "adenosine",
+      "adenosine",
+      "adenosine",
+      "adenosine",
+      "adenosine",
+      "adenosine",
+      "adenosine",
+      "adenosine"
+     ],
+     "fs": 40,
+     "dropAt": "word:more",
+     "each": 0.05,
+     "h": 480
+    },
+    {
+     "type": "gauge",
+     "title": "sleep pressure",
+     "value": 82,
+     "verdict": "SLEEPY",
+     "at": "word:sleepier",
+     "at2": "word:sleepier+0.1"
+    }
+   ]
+  },
+  {
+   "pose": "think",
+   "lines": [
+    "Caffeine looks almost the same,"
+   ],
+   "shots": [
+    {
+     "type": "compare",
+     "left": {
+      "title": "adenosine",
+      "text": "makes you sleepy"
+     },
+     "right": {
+      "title": "caffeine",
+      "text": "a look-alike"
+     },
+     "rightAt": "word:same"
+    }
+   ]
+  },
+  {
+   "pose": "excited",
+   "lines": [
+    "so it _blocks_ the spots adenosine needs."
+   ],
+   "shots": [
+    {
+     "type": "row",
+     "tiles": [
+      {
+       "icon": "lucide:lock-keyhole",
+       "label": "spot"
+      },
+      {
+       "icon": "lucide:lock-keyhole",
+       "label": "spot"
+      },
+      {
+       "icon": "lucide:lock-keyhole",
+       "label": "spot"
+      }
+     ],
+     "ats": [
+      "word:so",
+      "word:it",
+      "word:blocks"
+     ]
+    },
+    {
+     "type": "stamp",
+     "text": "BLOCKED",
+     "rot": -6,
+     "at": "word:needs"
+    }
+   ]
+  },
+  {
+   "pose": "count",
+   "lines": [
+    "About half is still in you five hours later."
+   ],
+   "shots": [
+    {
+     "type": "clock",
+     "text": "5 hours",
+     "sub": "after your coffee",
+     "spinAt": "word:five",
+     "dur": 1.0,
+     "turn": 0.21
+    },
+    {
+     "type": "num",
+     "value": 50,
+     "from": 100,
+     "suffix": "%",
+     "label": "caffeine still in you",
+     "count": 0.8,
+     "at": "word:later"
+    }
+   ]
+  },
+  {
+   "pose": "shocked",
+   "react": "word:once",
+   "lines": [
+    "When it wears off, all that adenosine hits at _once_."
+   ],
+   "shots": [
+    {
+     "type": "spike",
+     "title": "sleep pressure you feel",
+     "points": [
+      10,
+      11,
+      10,
+      12,
+      11,
+      13,
+      18,
+      70,
+      96,
+      88
+     ],
+     "peakLabel": "crash",
+     "drawAt": "word:wears",
+     "dur": 1.1,
+     "peak": 96,
+     "suffix": "%"
+    },
+    {
+     "type": "sticker",
+     "lines": [
+      "THE CRASH"
+     ],
+     "rot": 3,
+     "at": "word:once"
+    }
+   ]
+  },
+  {
+   "pose": "hi",
+   "lines": [
+    "Follow for one small science fact a day."
+   ],
+   "shots": [
+    {
+     "type": "follow",
+     "handle": "@yourname",
+     "text": "one small science fact a day",
+     "tapAt": "word:follow+0.5"
+    }
+   ]
+  }
+ ],
+ "format": "16:9",
+ "bg": "plain",
+ "colors": {
+  "accent": "#0e9f6e",
+  "hi": "#f59e0b"
+ }
+}

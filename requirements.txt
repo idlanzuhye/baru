@@ -1,0 +1,10 @@
+kokoro-onnx>=0.4
+misaki>=0.7
+spacy
+num2words
+espeakng-loader
+soundfile
+pyloudnorm
+scipy
+numpy
+pillow

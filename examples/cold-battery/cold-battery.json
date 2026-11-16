@@ -1,0 +1,228 @@
+{
+ "name": "cold-battery",
+ "theme": "studio",
+ "voice": {
+  "name": "af_heart",
+  "speed": 1.0
+ },
+ "music": {
+  "style": "soft",
+  "level": -34
+ },
+ "max_hold": 2.6,
+ "beats": [
+  {
+   "pose": "talk",
+   "lines": [
+    "Your phone said _twenty_ percent."
+   ],
+   "shots": [
+    {
+     "type": "card",
+     "icon": "fluent-emoji-flat:mobile-phone",
+     "label": "your phone",
+     "title": "Battery: 20%",
+     "w": 640
+    },
+    {
+     "type": "num",
+     "value": 20,
+     "from": 100,
+     "suffix": "%",
+     "label": "battery left",
+     "count": 0.7,
+     "at": "word:twenty"
+    }
+   ]
+  },
+  {
+   "pose": "shocked",
+   "lines": [
+    "Then it died in the cold."
+   ],
+   "shots": [
+    {
+     "type": "stamp",
+     "text": "DEAD",
+     "rot": -8,
+     "at": "word:died"
+    },
+    {
+     "type": "card",
+     "icon": "fluent-emoji-flat:snowflake",
+     "label": "outside",
+     "title": "Below freezing",
+     "w": 640,
+     "at": "word:cold"
+    }
+   ]
+  },
+  {
+   "pose": "shrug",
+   "lines": [
+    "But the charge didn't vanish."
+   ],
+   "shots": [
+    {
+     "type": "sticker",
+     "lines": [
+      "STILL",
+      "THERE"
+     ],
+     "red": true,
+     "rot": -3
+    }
+   ]
+  },
+  {
+   "pose": "explain",
+   "lines": [
+    "A battery makes power with a _chemical_ reaction,"
+   ],
+   "shots": [
+    {
+     "type": "card",
+     "icon": "fluent-emoji-flat:battery",
+     "label": "inside",
+     "title": "Your battery",
+     "w": 620
+    },
+    {
+     "type": "card",
+     "icon": "fluent-emoji-flat:test-tube",
+     "label": "how it works",
+     "title": "A chemical reaction",
+     "w": 720,
+     "at": "word:chemical"
+    }
+   ]
+  },
+  {
+   "pose": "calm",
+   "lines": [
+    "and cold slows that reaction down."
+   ],
+   "shots": [
+    {
+     "type": "clock",
+     "text": "slower",
+     "sub": "in the cold",
+     "spinAt": "word:slows",
+     "dur": 1.4,
+     "turn": 0.3
+    }
+   ]
+  },
+  {
+   "pose": "point_up",
+   "lines": [
+    "So the voltage dips,"
+   ],
+   "shots": [
+    {
+     "type": "limits",
+     "items": [
+      {
+       "name": "warm",
+       "to": 82,
+       "end": "FINE"
+      },
+      {
+       "name": "cold",
+       "to": 12,
+       "end": "DIPS"
+      }
+     ],
+     "drainAt": "word:voltage",
+     "dur": 1.0
+    }
+   ]
+  },
+  {
+   "pose": "oops",
+   "lines": [
+    "and the phone _thinks_ it's empty."
+   ],
+   "shots": [
+    {
+     "type": "card",
+     "icon": "fluent-emoji-flat:low-battery",
+     "label": "the phone thinks",
+     "title": "Shutting down\u2026",
+     "w": 680
+    },
+    {
+     "type": "sticker",
+     "lines": [
+      "FAKE EMPTY"
+     ],
+     "rot": 4,
+     "at": "word:empty"
+    }
+   ]
+  },
+  {
+   "pose": "excited",
+   "react": "word:back",
+   "lines": [
+    "Warm it up, and most of that charge comes _back_."
+   ],
+   "shots": [
+    {
+     "type": "card",
+     "icon": "fluent-emoji-flat:fire",
+     "label": "step one",
+     "title": "Warm it up",
+     "w": 620
+    },
+    {
+     "type": "card",
+     "icon": "fluent-emoji-flat:battery",
+     "label": "warmed up",
+     "title": "Charge is back",
+     "w": 680,
+     "at": "word:back"
+    }
+   ]
+  },
+  {
+   "pose": "point_up",
+   "lines": [
+    "Keep it in an inner pocket on cold days."
+   ],
+   "shots": [
+    {
+     "type": "list",
+     "title": "On cold days",
+     "items": [
+      "Inner pocket",
+      "Low brightness",
+      "Charge before you go"
+     ],
+     "ticks": [
+      "word:inner",
+      "word:cold",
+      "word:days"
+     ]
+    }
+   ]
+  },
+  {
+   "pose": "hi",
+   "lines": [
+    "Send this to the friend whose phone always dies."
+   ],
+   "shots": [
+    {
+     "type": "send",
+     "from": "you",
+     "fromIcon": "lucide:user",
+     "to": "that friend",
+     "toIcon": "lucide:smartphone",
+     "sendAt": "word:friend"
+    }
+   ]
+  }
+ ],
+ "character": "maya"
+}

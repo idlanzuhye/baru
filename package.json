@@ -1,0 +1,9 @@
+{
+  "name": "beatreel",
+  "private": true,
+  "description": "Talking-avatar explainer reels from a JSON script: voice, word-synced captions, one animated idea per beat.",
+  "license": "MIT",
+  "dependencies": {
+    "gsap": "^3.13.0"
+  }
+}

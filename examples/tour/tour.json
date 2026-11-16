@@ -1,0 +1,451 @@
+{
+ "name": "tour",
+ "theme": "studio",
+ "voice": {
+  "speed": 1.0
+ },
+ "character": "none",
+ "beats": [
+  {
+   "lines": [
+    "A card with an icon."
+   ],
+   "presenter": false,
+   "hero": {
+    "type": "card",
+    "icon": "lucide:lightbulb",
+    "label": "card",
+    "title": "One idea",
+    "text": "and a short line under it",
+    "w": 760
+   }
+  },
+  {
+   "lines": [
+    "A number that rolls."
+   ],
+   "presenter": false,
+   "hero": {
+    "type": "num",
+    "value": 48210,
+    "label": "people",
+    "at": "word:rolls"
+   }
+  },
+  {
+   "lines": [
+    "Text that decodes."
+   ],
+   "presenter": false,
+   "hero": {
+    "type": "scramble",
+    "text": "DECODED",
+    "label": "scramble",
+    "at": "word:decodes"
+   }
+  },
+  {
+   "lines": [
+    "A sticker and a stamp."
+   ],
+   "presenter": false,
+   "hero": [
+    {
+     "type": "sticker",
+     "lines": [
+      "ONE RULE"
+     ],
+     "red": true,
+     "rot": -3,
+     "y": 700
+    },
+    {
+     "type": "stamp",
+     "text": "CHECKED",
+     "rot": 5,
+     "y": 1000,
+     "at": "word:stamp"
+    }
+   ]
+  },
+  {
+   "lines": [
+    "A terminal that types."
+   ],
+   "presenter": false,
+   "hero": {
+    "type": "term",
+    "title": "zsh",
+    "lines": [
+     "$ npm run build",
+     "  compiled in 2.1s",
+     "  done"
+    ],
+    "typeDur": 1.0
+   }
+  },
+  {
+   "lines": [
+    "A checklist that ticks."
+   ],
+   "presenter": false,
+   "hero": {
+    "type": "list",
+    "title": "Before you ship",
+    "items": [
+     "Tests pass",
+     "Docs updated",
+     "Version bumped"
+    ],
+    "ticks": [
+     "word:checklist",
+     "word:that",
+     "word:ticks"
+    ]
+   }
+  },
+  {
+   "lines": [
+    "Tiles that land one by one."
+   ],
+   "presenter": false,
+   "hero": {
+    "type": "row",
+    "tiles": [
+     {
+      "icon": "lucide:mail",
+      "label": "Mail"
+     },
+     {
+      "icon": "lucide:calendar",
+      "label": "Calendar"
+     },
+     {
+      "icon": "lucide:folder",
+      "label": "Files"
+     }
+    ],
+    "ats": [
+     "word:tiles",
+     "word:land",
+     "word:one#2"
+    ]
+   }
+  },
+  {
+   "lines": [
+    "A grid with one picked out."
+   ],
+   "presenter": false,
+   "hero": {
+    "type": "grid",
+    "n": 24,
+    "cols": 6,
+    "hi": [
+     9
+    ],
+    "hiAt": [
+     "word:picked"
+    ]
+   }
+  },
+  {
+   "lines": [
+    "Wrong versus right."
+   ],
+   "presenter": false,
+   "hero": {
+    "type": "compare",
+    "left": {
+     "title": "Guess",
+     "text": "hope it works"
+    },
+    "right": {
+     "title": "Measure",
+     "text": "know it works"
+    },
+    "rightAt": "word:right"
+   }
+  },
+  {
+   "lines": [
+    "A date on a calendar."
+   ],
+   "presenter": false,
+   "hero": {
+    "type": "date",
+    "month": "MAR",
+    "day": "14"
+   }
+  },
+  {
+   "lines": [
+    "A browser window."
+   ],
+   "presenter": false,
+   "hero": {
+    "type": "browser",
+    "tab": "Docs",
+    "url": "example.com/docs",
+    "icon": "lucide:book-open",
+    "title": "Getting started",
+    "text": "Install, write a script, render."
+   }
+  },
+  {
+   "lines": [
+    "Code with a line boxed."
+   ],
+   "presenter": false,
+   "hero": {
+    "type": "code",
+    "file": "app.py",
+    "lang": "py",
+    "lines": [
+     "def total(items):",
+     "    s = 0",
+     "    for x in items:",
+     "        s += x.price",
+     "    return s"
+    ],
+    "marks": [
+     {
+      "line": 4,
+      "to": 4,
+      "at": "word:boxed",
+      "tag": "here"
+     }
+    ]
+   }
+  },
+  {
+   "lines": [
+    "One thing reaching many."
+   ],
+   "presenter": false,
+   "hero": {
+    "type": "hub",
+    "icon": "lucide:server",
+    "label": "API",
+    "items": [
+     {
+      "icon": "lucide:smartphone",
+      "title": "App",
+      "a": -150
+     },
+     {
+      "icon": "lucide:globe",
+      "title": "Web",
+      "a": -90
+     },
+     {
+      "icon": "lucide:watch",
+      "title": "Watch",
+      "a": -30
+     }
+    ],
+    "ats": [
+     "word:reaching",
+     "word:reaching+0.2",
+     "word:many"
+    ]
+   }
+  },
+  {
+   "lines": [
+    "Words that pile up."
+   ],
+   "presenter": false,
+   "hero": {
+    "type": "pile",
+    "items": [
+     "emails",
+     "alerts",
+     "pings",
+     "tasks",
+     "meetings",
+     "reminders"
+    ],
+    "fs": 44,
+    "dropAt": "word:pile"
+   }
+  },
+  {
+   "lines": [
+    "A score on a dial."
+   ],
+   "presenter": false,
+   "hero": {
+    "type": "gauge",
+    "title": "risk score",
+    "value": 72,
+    "verdict": "HIGH",
+    "at2": "word:dial"
+   }
+  },
+  {
+   "lines": [
+    "A share of a hundred."
+   ],
+   "presenter": false,
+   "hero": {
+    "type": "dots",
+    "n": 100,
+    "cols": 10,
+    "hi": 23,
+    "redAt": "word:hundred"
+   }
+  },
+  {
+   "lines": [
+    "A chart that spikes."
+   ],
+   "presenter": false,
+   "hero": {
+    "type": "spike",
+    "title": "reports",
+    "points": [
+     5,
+     6,
+     5,
+     7,
+     6,
+     8,
+     40,
+     95,
+     70,
+     30,
+     12
+    ],
+    "peakLabel": "peak",
+    "drawAt": "word:chart",
+    "dur": 1.0
+   }
+  },
+  {
+   "lines": [
+    "Dominoes that fall."
+   ],
+   "presenter": false,
+   "hero": {
+    "type": "domino",
+    "items": [
+     "one",
+     "two",
+     "three",
+     "four"
+    ],
+    "fallAt": "word:fall"
+   }
+  },
+  {
+   "lines": [
+    "A status board."
+   ],
+   "presenter": false,
+   "hero": {
+    "type": "status",
+    "title": "Status",
+    "items": [
+     {
+      "icon": "lucide:mail",
+      "title": "Mail"
+     },
+     {
+      "icon": "lucide:calendar",
+      "title": "Calendar"
+     },
+     {
+      "icon": "lucide:cloud",
+      "title": "Storage"
+     }
+    ],
+    "downAt": [
+     "word:board"
+    ]
+   }
+  },
+  {
+   "lines": [
+    "A dotted world map."
+   ],
+   "presenter": false,
+   "hero": {
+    "type": "world",
+    "redAt": "word:map",
+    "spread": 0.8,
+    "label": "worldwide",
+    "labelAt": "word:map"
+   }
+  },
+  {
+   "lines": [
+    "A clock that sweeps."
+   ],
+   "presenter": false,
+   "hero": {
+    "type": "clock",
+    "text": "24 hours",
+    "spinAt": "word:sweeps",
+    "dur": 1.0
+   }
+  },
+  {
+   "lines": [
+    "A file that becomes another."
+   ],
+   "presenter": false,
+   "hero": {
+    "type": "files",
+    "items": [
+     {
+      "ext": "PDF",
+      "name": "report",
+      "c": "#e5484d"
+     },
+     {
+      "ext": "DOC",
+      "name": "notes",
+      "c": "#3b82f6"
+     },
+     {
+      "ext": "MD",
+      "name": "clean",
+      "c": "#16a34a"
+     }
+    ],
+    "ats": [
+     "word:file",
+     "word:becomes",
+     "word:another"
+    ]
+   }
+  },
+  {
+   "lines": [
+    "Stars for a project."
+   ],
+   "presenter": false,
+   "hero": {
+    "type": "starburst",
+    "text": "12K",
+    "sub": "stars",
+    "icon": "simple-icons:github",
+    "burstAt": "word:stars"
+   }
+  },
+  {
+   "lines": [
+    "And a follow card."
+   ],
+   "presenter": false,
+   "hero": {
+    "type": "follow",
+    "handle": "@yourname",
+    "text": "one idea a day",
+    "tapAt": "word:follow"
+   }
+  }
+ ],
+ "hero_scale": 1.12
+}

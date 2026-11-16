@@ -1,0 +1,74 @@
+{
+ "mallet_celesta": {
+  "file": "mallet_celesta.wav",
+  "peak": 0.0262,
+  "sr": 48000,
+  "dur": 0.414
+ },
+ "mallet_up4": {
+  "file": "mallet_up4.wav",
+  "peak": 0.3336,
+  "sr": 48000,
+  "dur": 0.749
+ },
+ "pro_impact_air": {
+  "file": "pro_impact_air.wav",
+  "peak": 0.1729,
+  "sr": 48000,
+  "dur": 0.848
+ },
+ "pro_pop_in_deep": {
+  "file": "pro_pop_in_deep.wav",
+  "peak": 0.02,
+  "sr": 48000,
+  "dur": 0.176
+ },
+ "pro_pop_thup": {
+  "file": "pro_pop_thup.wav",
+  "peak": 0.0025,
+  "sr": 48000,
+  "dur": 0.099
+ },
+ "pro_pop_tink": {
+  "file": "pro_pop_tink.wav",
+  "peak": 0.0011,
+  "sr": 48000,
+  "dur": 0.093
+ },
+ "pro_typing_run_blip": {
+  "file": "pro_typing_run_blip.wav",
+  "peak": 0.3779,
+  "sr": 48000,
+  "dur": 1.507
+ },
+ "shutter_film": {
+  "file": "shutter_film.wav",
+  "peak": 0.0977,
+  "sr": 48000,
+  "dur": 0.284
+ },
+ "swish_soft": {
+  "file": "swish_soft.wav",
+  "peak": 0.111,
+  "sr": 48000,
+  "dur": 0.883
+ },
+ "ui_pop_boop": {
+  "file": "ui_pop_boop.wav",
+  "peak": 0.0294,
+  "sr": 48000,
+  "dur": 0.195
+ },
+ "ui_pop_soft": {
+  "file": "ui_pop_soft.wav",
+  "peak": 0.0423,
+  "sr": 48000,
+  "dur": 0.18
+ },
+ "whoosh_fast_crisp": {
+  "file": "whoosh_fast_crisp.wav",
+  "peak": 0.1362,
+  "sr": 48000,
+  "dur": 1.056
+ }
+}

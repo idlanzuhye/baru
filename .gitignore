@@ -1,0 +1,8 @@
+node_modules/
+__pycache__/
+build/
+*.mp4
+*-frames.jpg
+!docs/*.mp4
+.venv/
+videos/
